@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương tìm phần tử x bất kỳ có tồn tại trong mảng hay không?</title>
+</head>
+<body>
+<script>
+    function timx(arr,x){
+        for (let i = 0; i < arr.length; i++){
+            if(arr.indexOf(x) == -1){
+                alert(x + " không tồn tại")
+            } else {
+                alert(x + " có tồn tại")
+            break;
+            }
+        }
+    }
+    document.write(timx([1,2,3,4,6,7],9))
+</script>
+</body>
+</html>

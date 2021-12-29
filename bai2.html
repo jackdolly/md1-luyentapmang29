@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cho mảng đầu vào gồm các phần tử là các chuỗi.
+        Viết chương trình tìm phần tử có độ dài nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function timmindodai(arr){
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++){
+            if(min.length > arr[i].length){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    document.write(timmindodai(["ka","mee","Zo","kO","h"]))
+</script>
+</body>
+</html>
